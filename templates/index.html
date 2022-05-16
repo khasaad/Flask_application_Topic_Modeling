@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;}
+
+    .button1 {
+          background-color: #00b2ff; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+            }
+     .button3 {
+          background-color: #00b2ff; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          margin-left: 20px;
+            }
+
+    .button2 {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+    </style>
+    <meta charset="UTF-8">
+    <title>Predict topic app</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <H1 style="color:#00b2ff;">Predict topic of an article</H1>
+    <form action="http://127.0.0.1:5000/" method="post">
+      <H3 style="color:#065f86;"><label for="art">Article :</label></H3>
+      <div class="control is-loading">
+          <label>
+              <textarea name="article" id="myInput" class="textarea" placeholder="Input article here."></textarea>
+          </label>
+      </div>
+      <br>
+        <div>
+            <input class="button1 button2" type="submit" value="Submit">
+            <button class ="button3" id="btn" >Clear</button>
+        </div>
+
+    </form>
+
+    <script>
+    $('#btn').click ( function(event){
+       $('#myInput').val('');
+       event.preventDefault();
+    });
+    </script>
+
+</body>
+</html>

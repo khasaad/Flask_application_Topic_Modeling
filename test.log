@@ -1,0 +1,6 @@
+15-05-22 22:06 32 root         WARNING  Script Started : 15/05/2022 22 06 32
+15-05-22 22:06 32 root         INFO     Read data
+15-05-22 22:06 32 root         INFO     Run cleaned function
+15-05-22 22:06 32 root         INFO     Start training model
+15-05-22 22:06 56 root         INFO     End training model
+15-05-22 22:06 56 root         WARNING  Script Ended : 15/05/2022 22 06 56

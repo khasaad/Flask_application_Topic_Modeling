@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;}
+        img{margin-left: 350px;
+        margin-top: -270px;}
+    </style>
+    <title>Prediction</title>
+</head>
+<body>
+    <H1 style="color:#00b2ff;">Predict topic of an article</H1>
+    <H3 style="color:#065f86;"><label for="art">Article :</label></H3>
+    <label for="article-input">
+
+    </label><textarea class="article-input" id="article-input" type="text" rows="9" >{{ text[0] }}</textarea>
+    <br>
+    <br>
+    <div>
+        {% for table in tables %}
+
+            {{ table|safe }}
+        {% endfor %}
+
+    <img src={{url}} alt="Chart" height="60%" width="60%">
+    </div>
+
+</body>
+</html>
